@@ -8,32 +8,31 @@ The app is built using Streamlit and a trained XGBoost classification model, pro
 Music streaming platforms collect rich user interaction data. Understanding why a song ends (track completion, skip, logout, error, etc.) helps improve user experience, recommendations, and platform stability.
 
 **This project:**
-Trains a machine learning model on listening behavior data
-Predicts the end reason of a music session
-Deploys the model using Streamlit for real-time inference
-inference
+Trains a machine learning model on listening behavior data,
+Predicts the end reason of a music session,
+Deploys the model using Streamlit for real-time inference.
 
 **🧠 Machine Learning Model**
 **Algorithm:** XGBoost Classifier
 **Problem Type:** Multi-class Classification
 **Target Variable:** reason_end
 **Input Features:**
-platform
-reason_start
-source_file
-duration_ms
-shuffle
-hour
-weekday
+platform,
+reason_start,
+source_file,
+duration_ms,
+shuffle,
+hour,
+weekday.
 The model is saved as a pickle file **(xg_model.pkl)** and loaded into the Streamlit app for predictions.
 
 
 **🖥️ Application Features**
-Interactive UI built with Streamlit
-Dropdowns for categorical inputs
-Numeric validation for time-based features
-Real-time prediction with human-readable labels
-Handles sklearn version compatibility issues
+Interactive UI built with Streamlit,
+Dropdowns for categorical inputs,
+Numeric validation for time-based features,
+Real-time prediction with human-readable labels,
+Handles sklearn version compatibility issues.
 
 **🛠️ Tech Stack**
 **Programming Language:** Python
@@ -68,19 +67,19 @@ The output is mapped from numeric model predictions to meaningful labels for eas
 
 
 **📌 Use Cases**
-User behavior analysis for music streaming platforms
-Improving recommendation systems
-Identifying app usability or technical issues
-Learning end-to-end ML deployment with Streamlit
+User behavior analysis for music streaming platforms,
+Improving recommendation systems,
+Identifying app usability or technical issues,
+Learning end-to-end ML deployment with Streamlit.
 
 **📝 Future Enhancements**
-Add probability scores for predictions
-Improve feature engineering
-Deploy on Streamlit Community Cloud
-Integrate real-time user data
+Add probability scores for predictions,
+Improve feature engineering,
+Deploy on Streamlit Community Cloud,
+Integrate real-time user data.
 
 **🙌 Acknowledgements**
-Streamlit for rapid ML app deployment
-Scikit-learn & XGBoost for model development
+Streamlit for rapid ML app deployment,
+Scikit-learn & XGBoost for model development.
 
 **⭐ If you like this project, give it a star on GitHub!**
